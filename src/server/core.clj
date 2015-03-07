@@ -8,4 +8,4 @@
    
    
 (defn -main [& args]
-	ring.adapter.jetty/run-jetty handler {:port 3000})
+	(ring.adapter.jetty/run-jetty handler {:port 3000}))
