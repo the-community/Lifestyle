@@ -8,5 +8,4 @@
   (GET "/" [] (resource-response "index.html" {:root "public"}))
   (route/not-found "Not Found"))
 
-(def app
-  (wrap-defaults app-routes site-defaults))
+(def app app-routes)
