@@ -6,6 +6,7 @@
 
 (defroutes app-routes
   (GET "/" [] (resource-response "index.html" {:root "public"}))
+  (POST "/Happy" {params :params} (prn "params:" params))
   (route/not-found "Not Found"))
 
 (def app app-routes)
