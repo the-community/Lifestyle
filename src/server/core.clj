@@ -4,7 +4,7 @@
 (defn handler [request]
   {:status 200
    :headers {"Content-Type" "text/html"}
-   :body "Hello World"})
+   :body "<b>Hello World<b>"})
    
    
 (defn -main [& args]
